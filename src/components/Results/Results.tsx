@@ -1,10 +1,20 @@
 import React from 'react';
+import Card from '../Card/Card';
+import type { Pokemon } from '../../types/pokemon';
 
-class Results extends React.Component {
+type Props = {
+  items: Pokemon[];
+};
+
+class Results extends React.Component<Props> {
   render() {
+    const { items } = this.props;
+
     return (
       <div>
-        <p>Results will be here</p>
+        {items.map((item) => (
+          <Card key={item.name} item={item} />
+        ))}
       </div>
     );
   }
