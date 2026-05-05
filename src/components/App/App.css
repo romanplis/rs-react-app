@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* верхняя часть */
+.search-section {
+  padding: 16px;
+  border-bottom: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* нижняя часть */
+.results-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}

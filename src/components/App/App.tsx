@@ -1,7 +1,22 @@
+import React from 'react';
+import Search from '../Search/Search';
+import Results from '../Results/Results';
 import './App.css';
 
-function App() {
-  return <div>Hello! It&apos;s me, Roma!</div>;
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <div className="search-section">
+          <Search />
+        </div>
+
+        <div className="results-section">
+          <Results />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
